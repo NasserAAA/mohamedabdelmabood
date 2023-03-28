@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
 import ProjectsPage from './components/ProjectsPage';
@@ -10,12 +10,12 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navigation />
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/projects" component={ProjectsPage} />
-        </Switch>
+      <Navigation />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+        </Routes>
       </div>
     </Router>
   );
