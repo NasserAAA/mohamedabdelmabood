@@ -6,7 +6,7 @@ function Navigation() {
   return (
     <nav>
       <div className="logo">
-        <NavLink to="/">My React App</NavLink>
+        <NavLink to="/">HomePage</NavLink>
       </div>
       <ul>
         <li>
