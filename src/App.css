@@ -1,39 +1,66 @@
 .App {
-  font-family: sans-serif;
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #282c34;
-  padding: 10px;
-  color: white;
+  height: 80px;
+  background-color: #333;
+  color: #fff;
+  padding: 0 20px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 10px;
-}
-
-nav ul li a {
+.navbar a {
+  color: #fff;
   text-decoration: none;
-  color: white;
+  font-size: 1.2rem;
+  margin-left: 20px;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+.navbar a:hover {
+  color: #ccc;
 }
 
-footer {
-  background-color: #282c34;
-  color: white;
+.active {
+  font-weight: bold;
+}
+
+.page-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.project-card {
+  background-color: #eee;
+  border-radius: 5px;
   padding: 10px;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .navbar a {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
 }
