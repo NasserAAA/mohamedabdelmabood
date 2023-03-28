@@ -8,7 +8,7 @@ import Navigation from './components/Navigation';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
       <Navigation />
         <Routes>
@@ -17,7 +17,7 @@ function App() {
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
